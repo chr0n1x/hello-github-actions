@@ -1,3 +1,13 @@
 ---
 name: Workflow for files (testing action-a)
 on: push
+
+jobs:
+  build:
+    name: ohai action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: ./action-a
+        env:
+          MY_NAME: "chr0n1x"
