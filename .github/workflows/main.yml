@@ -1,0 +1,3 @@
+---
+name: Workflow for files (testing action-a)
+on: push
